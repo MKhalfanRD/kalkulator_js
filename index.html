@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family:  cursive;
+        }
+        table{
+            border-radius: 7px;
+            background-color: pink;
+            box-shadow: 7px 9px rgb(209, 141, 141) ;
+        }
+        td{
+            border-style: hidden;
+        }
+        th{
+            border-style: hidden;
+        }
+        input{
+            background-color: rgb(224, 123, 224);
+            border-style: hidden;
+            border-radius: 5px;
+            margin: 1px;
+        }
+        input.tambah{
+            background-color: rgb(62, 215, 151);
+            border-style: hidden;
+        }
+        input.kurang{
+            background-color: rgb(56, 170, 247);
+            border-style: hidden;
+        }
+        input.kali{
+            background-color: rgb(208, 142, 43);
+            border-style: hidden;
+        }
+        input.bagi{
+            background-color: rgb(123, 207, 224);
+            border-style: hidden;
+        }
+        input.pangkat{
+            background-color: rgb(219, 150, 150);
+            border-style: hidden;
+        }
+        input.sibag{
+            background-color: rgb(254, 112, 99);
+            border-style: hidden;
+        }
+        input:hover.tambah{
+            background-color: rgb(143, 231, 223);
+        }
+        input:hover.kurang{
+            background-color: rgb(143, 231, 223);
+        }
+        input:hover.kali{
+            background-color: rgb(143, 231, 223);
+        }
+        input:hover.bagi{
+            background-color: rgb(143, 231, 223);
+        }
+        input:hover.pangkat{
+            background-color: rgb(143, 231, 223);
+        }
+        input:hover.sibag{
+            background-color: rgb(143, 231, 223);
+        }
+    </style>
+</head>
+
+<body>
+    <table align="center" cellpadding="10">
+        <form action="" id="kalkulator">
+            <thead>
+                <tr>
+                    <th>Kalkulator</th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        Bilangan Pertama: <br>
+                        <input type="text" name="number1" id="number1">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Bilangan Kedua: <br>
+                        <input type="text" name="number2" id="number2">
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td align="center">
+                        <input class="tambah" type="button" name="Tambah" value="+" onclick="tambah()">
+                        <input class="kurang" type="button" name="Kurang" value="-" onclick="kurang()">
+                        <input class="kali" type="button" name="Kali" value="x" onclick="kali()">
+                        <input class="bagi" type="button" name="Bagi" value="/" onclick="bagi()">
+                        <input class="pangkat" type="button" name="Pangkat" value="^" onclick="pangkat()">
+                        <input class="sibag" type="button" name="SisaBagi" value="%" onclick="sisaBagi()">
+                    </td>
+                </tr>
+            </tfoot>
+        </form>
+    </table>
+    <script src="scriptKalkulator.js"></script>
+</body>
+
+</html>
